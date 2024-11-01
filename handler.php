@@ -56,17 +56,17 @@
         }
         if ($PizzaSize == "XL") {
           if ($Toppings > 1) {
-            echo "<h4>le cost is = " .  (($Toppings - 1) * 0.75) + 10 . "</h4>\n";
+            echo "<h4>The total is = $" .  round(((($Toppings - 1) * 0.75) + 10)*1.13*100)/100 . "</h4>\n";
           }
           if ($Toppings < 1) {
-            echo "<h4>le cost is = " . 10 . "</h4>\n";
+            echo "<h4>The total is = $" . 10*1.13 . "</h4>\n";
           }
         } elseif ($PizzaSize == "Large") {
           if ($Toppings > 1) {
-            echo "<h4>le cost is = " .  (($Toppings - 1) * 0.75) + 6 . "</h4>\n";
+            echo "<h4>The total is = $" .  round(((($Toppings - 1) * 0.75) + 6)*1.13*100)/100 . "</h4>\n";
           }
           if ($Toppings < 1) {
-            echo "<h4>le cost is = " . 6 . "</h4>\n";
+            echo "<h4>The total is = $" . 6*1.13 . "</h4>\n";
           }
         } else {
           echo "<h4>You're cooked bud (Size Error) </h4>\n";
